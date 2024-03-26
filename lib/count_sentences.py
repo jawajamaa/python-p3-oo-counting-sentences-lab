@@ -30,6 +30,7 @@ class MyString:
   def is_exclamation(self):
     return self.value.endswith("!")
 
+# better solution
   # def count_sentences(self):
   #   value = self.value
   #   for punc in ['!','?']:
@@ -39,10 +40,11 @@ class MyString:
     
   #   return len(sentences)
 
-
+# my solution with help, but much more verbose
   def count_sentences(self):
     endings = ("!","?")
     # return len(self.value.split()) only works for one word sentences!
+    # next three lines are not needed...
     # if self.value == "":
     #   return 0
     # else:
